@@ -34,3 +34,41 @@ html {
     background-color: #FFF;
     color: #000;
 }
+
+/* MAIN */
+main{
+    margin-left: 300px;
+    max-width: 100%;
+    padding: 56px;
+}
+main .showcase-title{
+}
+main .main-title{
+    font-size: 64px;
+    margin: 34px 0 10px 0;
+}
+main .section-title{
+    color: #F44336;
+    font-size: 48px;
+}
+
+main .section-title::after{
+    content: '';
+    display: block;
+    background-color: #FF0000;
+    height: 10px;
+    width: 2ch;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+.photos{
+    margin-top: 35px;
+}
+.photos img{
+    max-width: 48%;
+    height: auto;
+}
+.photos :nth-child(odd){
+    margin-right: 15px;
+}
