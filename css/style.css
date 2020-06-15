@@ -39,36 +39,183 @@ html {
 main{
     margin-left: 300px;
     max-width: 100%;
-    padding: 56px;
-}
-main .showcase-title{
+    padding: 56px 56px 0 56px;
 }
 main .main-title{
     font-size: 64px;
-    margin: 34px 0 10px 0;
+    margin: 34px 0 0 0;
+}
+main .main-section{
+    margin-bottom: 72px;
 }
 main .section-title{
     color: #F44336;
     font-size: 48px;
+    margin-top: 10px;
 }
-
 main .section-title::after{
+    background-color: #FF0000;
+    border-radius: 4px;
     content: '';
     display: block;
-    background-color: #FF0000;
+    margin-top: 20px;
     height: 10px;
     width: 2ch;
-    border-radius: 4px;
-    margin-top: 20px;
 }
 
 .photos{
     margin-top: 35px;
 }
 .photos img{
-    max-width: 48%;
     height: auto;
+    margin-top: 10px;
+    max-width: 50%;
+    opacity: 0.8;
 }
-.photos :nth-child(odd){
-    margin-right: 15px;
+.photos img:nth-child(odd){
+    padding-right: 8px;
+}
+.photos img:nth-child(even){
+    padding-left: 8px;
+}
+.photos img:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+
+.first-paragraph{
+    margin: 18px 0;
+}
+main .services{
+    margin-bottom: 100px;
+}
+
+/* DESIGNERS */
+.designers .designers-title{
+    font-size: inherit;
+    font-weight: bolder;
+    margin: 20px 0;
+}
+.designers .designer-info{
+    background-color: #F1F1F1;
+    display: inline-block;
+    margin-bottom: 25px;
+    width: 32%;
+}
+.designers .designer-info:nth-child(odd){
+    margin: 0 15px;
+}
+.designers .designer-info img{
+    filter: grayscale(70%);
+    height: auto;
+    width: 100%;
+}
+.designers .designer-text{
+    padding: 15px;
+}
+.designer-text .designer-name{
+    font-size: 24px;
+    margin: 0;
+}
+.designer-text .position{
+    color: #606060;
+    font-weight: 100;
+    margin: 15px 0;
+    opacity: 0.7;
+}
+
+/* PACKAGES */
+/* TABLES */
+.table{
+    display: inline-block;
+    width: 49%;
+}
+.div-basic{
+    margin-right: 10px;
+}
+.div-pro{
+}
+table{
+    background-color: #F1F1F1;
+    column-width: 100%;
+    text-align: center;
+    width: 100%;
+}
+.table-content, .price{
+    border-bottom: 1px solid #DDD;
+    border-bottom: 1px solid #DDD;
+    height: 56px;
+
+}
+tfoot .price{
+    height: 121px;
+}
+.basic-title, .pro-title{
+    color: #FFF;
+    height: 100px;
+    font-size: 25px;
+    font-weight: 200;
+    width: 100%;
+}
+.basic-title{
+    background-color: #616161;
+}
+.pro-title{
+    background-color: #F44336;
+}
+.value{
+    font-size: 30px;
+}
+.per-room{
+    opacity: 0.6;
+}
+.button-td{
+    height: 96px;
+}
+.button{
+    border: none;
+    font-size: 16px;
+    padding: 15px 25px;
+}
+.basic-button{
+    background-color: #FFF;
+}
+.pro-button{
+    background-color: #F44336;
+    color: #FFF;
+}
+
+/* CONTACT */
+.input-text{
+    border: 1px solid #DDD;
+    height: 43px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+.submit-button{
+    background-color: #F44336;
+    border: none;
+    color: #FFF;
+    font-size: 17px;
+    height: 48px;
+    width: 100%;
+}
+.submit-button:hover{
+    background-color: #CCC;
+    color: #000;
+}
+
+/* FOOTER */
+.footer{
+    background-color: #F1F1F1;
+    height: 120px;
+    margin-top: 92px;
+    text-align: right;
+}
+.footer p{
+    line-height: 120px;
+    margin-right: 58px;
+}
+.footer a{
+    text-decoration: underline;
 }
