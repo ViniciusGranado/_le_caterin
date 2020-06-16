@@ -177,6 +177,11 @@ tfoot .price{
     font-size: 16px;
     padding: 15px 25px;
 }
+.button:hover{
+    background-color: #000;
+    color: #FFF;
+    cursor: pointer;
+}
 .basic-button{
     background-color: #FFF;
 }
@@ -203,6 +208,7 @@ tfoot .price{
 .submit-button:hover{
     background-color: #CCC;
     color: #000;
+    cursor: pointer;
 }
 
 /* FOOTER */
