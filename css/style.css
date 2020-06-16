@@ -219,3 +219,37 @@ tfoot .price{
 .footer a{
     text-decoration: underline;
 }
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1112px){
+    /* IMAGES SIZING */
+    .photos img{
+        /* display: block; */
+        max-width: 100%;
+    }
+    .photos img:nth-child(odd){
+        padding-right: 0;
+    }
+    .photos img:nth-child(even){
+        padding-left: 0;
+    }
+
+    /* TABLES */
+    .table{
+        display: block;
+        width: 90%;
+        margin: 0 auto 20px auto;
+    }
+}
+@media (max-width: 1161px){
+    /* DESIGNERS INFO SIZING */
+
+    .designers .designer-info{
+        display: block;
+        width: 100%;
+    }
+    .designers .designer-info:nth-child(odd){
+        margin: 0 0 25px 0;
+    }
+}
