@@ -9,7 +9,7 @@
     </head>
 
     <body>
-        
+
         <header class='header'>
             <div class='links'>
                 <a class='link logo' href="">Logo</a><!--
@@ -19,6 +19,36 @@
              --><a class='link book'href="#">Book Now</a>
             </div>
         </header>
+
+        <div class="search-area">
+            <div class="search-box">
+
+                <div class='heading-bar'>
+                    <p class='heading-hotel-name'>Hotel Name</p>
+                </div>
+                
+                <div class="input-area">
+                    <div class='side left-side'>
+                        <label for="checkin-date">Check In</label>
+                        <input type="text" name="" id="checkin-date" pattern='[0-9]{8}' placeholder='DD/MM/YYYY'>
+
+                    
+                        <label for="adults-input">Adults</label>
+                        <input type="number" name="" id="adults-input" value='1'>
+                    </div><!--
+
+                 --><div class="side right-side">
+                        <label for="checkout-date">Check Out</label>
+                        <input type="text" name="" id="checkout-date" pattern='[0-9]{8}' placeholder='DD/MM/YYYY'>
+
+                        <label for="kids-input">Kids</label>
+                        <input type="number" name="" id="kids-input" value='0'>
+                    </div>
+
+                    <button class="submit-button">Search availability</button>
+                </div>
+            </div>
+        </div>
     
     </body>
 </html>
