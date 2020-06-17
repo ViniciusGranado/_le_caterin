@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+/* Font reference:
+   font-family: 'Raleway', sans-serif; */
+
+*{
+    font-family: 'Raleway', sans-serif;
+}
+
+/* HEADER */
+
+.header{
+    background-color: #FFF;
+    height: 43px;
+
+}
+.link{
+    display: inline-block;
+    line-height: 43px;
+    font-size: 18px;
+    padding: 0 16px;
+}
+.link:hover{
+    background-color: #CCC;
+    color: #000;
+}
+.logo{
+    background-color: #F44336;
+    color: #FFF;
+}
+.logo::before{
+    content: url('../images/bed-orange.png');
+    margin-right: 15px;
+}
+.logo:hover::before{
+    content: url('../images/bed-black.png');
+}
+.book{
+    background-color: #F1F1F1;
+    float: right;
+}
