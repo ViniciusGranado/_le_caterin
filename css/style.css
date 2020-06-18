@@ -149,10 +149,11 @@ main {
     font-size: 15px;
     margin: 25px 0;
 }
-.input-area-2 div:not(.button-div){
+/* SEARCH AREA 2 */
+.input-area-2 > div:not(.button-div){
     margin-right: 16px;
 }
-.input-area-2 div:not(.button-div) input{
+.input-area-2 > div:not(.button-div) > input{
     border: 1px solid #CCC;
     padding: 10px;
 }
@@ -182,3 +183,53 @@ main {
     background-color: #CCC;
     color: #000;
 }
+.button-div label::before {
+    content: url('../images/search-black.png');
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+/* ROOMS AREA */
+.room-div {
+    background-color: #FFF;
+    display: inline-block;
+    margin-top: 20px;
+    width: calc(33.33% - 11px);
+}
+.room-div:not(:last-of-type){
+    margin-right: 16px;
+}
+.room-div > .room-image {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+.room-div .room-description {
+    padding: 16px;
+}
+.room-description > .room-title {
+    font-size: 25px;
+    font-weight: 400;
+}
+.room-description .room-price {
+    opacity: 0.6;
+}
+.room-title, .room-price, .bed, .room-size {
+    margin-bottom: 15px;
+}
+
+.room-description .room-button {
+    background-color: #000;
+    border: none;
+    color: #FFF;
+    cursor: pointer;
+    font-size: 15px;
+    height: 38px;
+    margin-top: 15px;
+    width: 100%;
+}
+.room-description .room-button:hover {
+    background-color: #CCC;
+    color: #000;
+}
+
