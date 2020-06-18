@@ -20,35 +20,82 @@
             </div>
         </header>
 
-        <div class="search-area">
-            <div class="search-box">
+        <main>
+            <div class="search-area">
+                <div class="search-box">
 
-                <div class='heading-bar'>
-                    <p class='heading-hotel-name'>Hotel Name</p>
-                </div>
-                
-                <div class="input-area">
-                    <div class='side left-side'>
-                        <label for="checkin-date">Check In</label>
-                        <input type="text" name="" id="checkin-date" pattern='[0-9]{8}' placeholder='DD/MM/YYYY'>
-
-                    
-                        <label for="adults-input">Adults</label>
-                        <input type="number" name="" id="adults-input" value='1'>
-                    </div><!--
-
-                 --><div class="side right-side">
-                        <label for="checkout-date">Check Out</label>
-                        <input type="text" name="" id="checkout-date" pattern='[0-9]{8}' placeholder='DD/MM/YYYY'>
-
-                        <label for="kids-input">Kids</label>
-                        <input type="number" name="" id="kids-input" value='0'>
+                    <div class='heading-bar'>
+                        <h1 class='heading-hotel-name'>Hotel Name</h1>
                     </div>
+                    
+                    <div class="input-area">
+                        <div class='side left-side'>
+                            <label for="checkin-date" class='checkin-label'>Check In</label>
+                            <input type="text" id="checkin-date" pattern='[0-9]{8}' placeholder='DD/MM/YYYY'>
 
-                    <button class="submit-button">Search availability</button>
+                        
+                            <label for="adults-input" class='adults-label'>Adults</label>
+                            <input type="number" id="adults-input" value='1'>
+                        </div><!--
+
+                    --><div class="side right-side">
+                            <label for="checkout-date" class='checkout-label'>Check Out</label>
+                            <input type="text" id="checkout-date" pattern='[0-9]{8}' placeholder='DD/MM/YYYY'>
+
+                            <label for="kids-input" class='kids-label'>Kids</label>
+                            <input type="number" id="kids-input" value='0'>
+                        </div>
+
+                        <button class="submit-button">Search availability</button>
+                    </div>
                 </div>
             </div>
-        </div>
-    
+
+            <div class='main-content main-content-1'>
+
+                <h2 class='main-title rooms'>Rooms</h2>
+
+                <p class='paragraph'>Make yourself at home is our slogan. We offer the best beds in the industry. Sleep well and rest well.</p>
+
+                <div class="input-area-2">
+                    <div class="input-div checkin-div">
+                        <label for="checkin-date-2" class='checkin-label'>Check In</label>
+                        <input type="text" id="checkin-date-2" pattern='[0-9]{8}' placeholder='DD/MM/YYYY'>
+                    </div><!--
+
+                 --><div class="input-div checkout-div">
+                        <label for="checkout-date-2" class='checkout-label'>Check Out</label>
+                        <input type="text" id="checkout-date-2" pattern='[0-9]{8}' placeholder='DD/MM/YYYY'>
+                    </div><!--
+                    
+                 --><div class="input-div adults-div">
+                            <label for="adults-input-2" class='adults-label'>Adults</label>
+                            <input type="number" id="adults-input-2" value='1'>
+                    </div><!--
+
+                 --><div class="input-div kids-div">
+                            <label for="kids-input-2" class='kids-label'>Kids</label>
+                            <input type="number" id="kids-input-2" value='0'>
+                    </div><!--
+
+                 --><div class="input-div button-div">
+                        <label for="submit-button-2">Search</label>
+                        <input  type='submit'class="submit-button-2" id='submit-button-2' value="Search"></input>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+
+            <div class='orange-information-bar'></div>
+
+            <div class='main-content main-content-2'></div>
+        </main>
+
+
     </body>
 </html>

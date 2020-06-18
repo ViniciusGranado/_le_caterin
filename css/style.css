@@ -38,7 +38,10 @@
     background-color: #F1F1F1;
     float: right;
 }
-
+/* MAIN */
+main {
+    background-color: #F1F1F1
+}
 /* SEARCH AREA */
 .search-area{
     background-image: url('../images/hotel.jpg');
@@ -59,6 +62,9 @@
     font-size: 30px;
     height: 64px;
     padding: 16px;
+}
+.heading-hotel-name {
+    font-size: inherit;
 }
 .heading-bar > .heading-hotel-name::before{
     content: url('../images/bed-big.png');
@@ -83,17 +89,17 @@
 .input-area label, .input-area input{
     display: block;
 }
-[for='checkin-date']::before, [for='checkout-date']::before{
+.checkin-label::before, .checkout-label::before{
     content: url('../images/date-icon.png');
     margin-right: 5px;
     vertical-align: middle;
 }
-[for='adults-input']::before{
+.adults-label::before{
     content: url('../images/adult-icon.png');
     margin-right: 5px;
     vertical-align: middle;
 }
-[for='kids-input']::before{
+.kids-label::before{
     content: url('../images/kid-icon.png');
     margin-right: 5px;
     vertical-align: middle;
@@ -129,4 +135,50 @@
 }
 .submit-button:hover::before{
     content: url('../images/search-black.png');
+}
+
+/* MAIN-CONTENT */
+.main-content {
+    padding: 16px
+}
+.main-title {
+    font-weight: inherit;
+    margin: 10px 0;
+}
+.main-content .paragraph {
+    font-size: 15px;
+    margin: 25px 0;
+}
+.input-area-2 div:not(.button-div){
+    margin-right: 16px;
+}
+.input-area-2 div:not(.button-div) input{
+    border: 1px solid #CCC;
+    padding: 10px;
+}
+.input-div {
+    display: inline-block;
+}
+.input-div input {
+    display: block;
+    font-size: 15px;
+    height: 40px;
+}
+#checkin-date-2, #checkout-date-2 {
+    width: 317px;
+}
+#adults-input-2, #kids-input-2 {
+    width: 207px;
+}
+.submit-button-2 {
+    background-color: #000;
+    border: none;
+    color: #FFF;
+    cursor: pointer;
+    height: 40px;
+    width: 205px;
+}
+.submit-button-2:hover {
+    background-color: #CCC;
+    color: #000;
 }
