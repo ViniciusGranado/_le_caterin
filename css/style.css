@@ -233,3 +233,62 @@ main {
     color: #000;
 }
 
+/* ABOUT AREA */
+
+.about {
+    margin-top: 35px;
+}
+.about-container {
+    position: relative;
+}
+.about-text-container {
+    height: 100%;
+    position: absolute;
+    top: 0
+    width: 33.3333%;
+}
+.about-text-container .main-title {
+    margin-top: 10px;
+}
+.about-text-container .about-paragraph {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+.about-text-container .weaccept-paragraph {
+    font-size: 15px;
+}
+.about-text-container .weaccept-paragraph img {
+    margin: 0 2px;
+    position: relative;
+    top: 2px;
+}
+.about-image-container {
+    float: right;
+    padding-left: 8px;
+    width: 66.6666%;
+}
+.about .map-image {
+    filter: grayscale(70%);
+    height: auto;
+    max-width: 100%;
+}
+.info {
+    clear: both;
+    margin-top: 550px;
+}
+.info .adress, .info .phone, .info .email{
+    display: inline-block;
+    font-size: 18px;
+    text-align: center;
+    width: 33.3333%;
+}
+.info .adress::before {
+    content: url('../images/gps-icon.png')
+}
+.info .phone::before {
+    content: url('../images/phone-icon.png');
+}
+.info .email::before {
+    content: url('../images/email-icon.png')
+}
