@@ -11,7 +11,6 @@
 .header{
     background-color: #FFF;
     height: 43px;
-
 }
 .link{
     display: inline-block;
@@ -235,7 +234,7 @@ main {
 
 /* ABOUT AREA */
 
-.about {
+.about-area {
     margin-top: 35px;
 }
 .about-container {
@@ -268,7 +267,7 @@ main {
     padding-left: 8px;
     width: 66.6666%;
 }
-.about .map-image {
+.about-area .map-image {
     filter: grayscale(70%);
     height: auto;
     max-width: 100%;
