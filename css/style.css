@@ -274,7 +274,7 @@ main {
 }
 .info {
     clear: both;
-    margin-top: 550px;
+    margin-top: 560px;
 }
 .info .adress, .info .phone, .info .email{
     display: inline-block;
@@ -290,4 +290,21 @@ main {
 }
 .info .email::before {
     content: url('../images/email-icon.png')
+}
+
+/* INFORMATION BAR */
+.orange-information-bar {
+    background-color: #F44336;
+    color: #FFF;
+    height: 115px;
+    padding: 0 15px;
+}
+.orange-information-bar .information-bar-paragraph {
+    line-height: 115px;
+}
+.orange-information-bar .information-bar-paragraph::before {
+    content: url('../images/information-icon.png');
+    margin-right: 15px;
+    position: relative;
+    top: 8px
 }
