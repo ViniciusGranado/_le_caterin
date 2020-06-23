@@ -355,3 +355,51 @@ main {
     left: 15px;
     position: absolute;
 }
+
+/* SUBSCRIBE AREA */
+
+.subscribe {
+    background-color: #000;
+    color: #FFF;
+    height: 285px;
+    margin-top: 40px;
+    opacity: 0.6;
+    padding: 20px 16px;
+}
+.subscribe:hover {
+    opacity: 1;
+}
+.subscribe .subscribe-title {
+    font-size: 30px;
+    font-weight: inherit;
+    margin: 26px 0 24px;
+}
+.subscribe .subscribe-paragraph {
+    font-size: 15px;
+}
+
+.subscribe-form .label {
+    display: block;
+    font-size: 15px;
+    margin: 20px 0 3px;
+}
+.subscribe-form .subscribe-input {
+    height: 40px;
+    font-size: 15px;
+    padding: 10px;
+    width: 100%;
+}
+.subscribe-form .subscribe-button {
+    background-color: #F44336;
+    border: none;
+    color: inherit;
+    height: 40px;
+    font-size: 15px;
+    margin-top: 15px;
+    padding: 5px 10px;
+    width: 100px;
+}
+.subscribe-form .subscribe-button:hover {
+    background-color: #CCC;
+    color: #000;
+}
