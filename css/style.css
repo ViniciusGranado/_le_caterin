@@ -297,6 +297,7 @@ main {
     background-color: #F44336;
     color: #FFF;
     height: 115px;
+    margin-top: 20px;
     padding: 0 15px;
 }
 .orange-information-bar .information-bar-paragraph {
@@ -464,4 +465,28 @@ main {
 .contact-form > .contact-button:hover {
     background-color: #CCC;
     color: #000;
+}
+
+/* FOOTER AREA */
+footer {
+    background-color: #000;
+    color: #FFF;
+    height: 230px;
+    padding: 45px;
+    text-align: center;
+}
+footer .footer-paragraph {
+    font-size: 18px;
+}
+footer .social-media {
+    margin: 32px 0;
+}
+.social-media > a:hover {
+    opacity: 0.7;
+}
+footer .powered-paragraph {
+    font-size: 15px;
+}
+.powered-paragraph > a {
+    text-decoration: underline;
 }
