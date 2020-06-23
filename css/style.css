@@ -403,3 +403,65 @@ main {
     background-color: #CCC;
     color: #000;
 }
+
+/* MAIN CONTENT 3 */
+/* CONTACT AREA */
+.main-content-3 .main-title {
+    font-size: 30px;
+    margin-top: 30px;
+}
+.main-content-3 .contact-paragraph {
+    font-size: 15px;
+    margin: 15px 0;
+}
+.main-content-3 > .contact-info-div {
+    font-size: 15px;
+}
+.contact-info-div > p {
+    margin: 3px 0;
+}
+.contact-info-div > .adress::before {
+    content: url('../images/gps-icon.png');
+    display: inline-block;
+    margin-right: 20px;
+    transform: scale(0.9);
+    vertical-align: middle;
+    width: 15px;
+}
+.contact-info-div > .phone::before {
+    content: url('../images/phone-icon.png');
+    display: inline-block;
+    margin-right: 20px;
+    transform: scale(0.9);
+    vertical-align: middle;
+    width: 15px;
+}
+.contact-info-div > .email::before {
+    content: url('../images/email-icon.png');
+    display: inline-block;
+    margin-right: 20px;
+    transform: scale(0.9);
+    vertical-align: middle;
+    width: 15px;
+}
+
+.contact-form > .contact-input {
+    border: 1px solid #CCC;
+    font-size: 15px;
+    height: 55px;
+    margin: 8px 0;
+    padding: 0 10px;
+    width: 100%;
+}
+.contact-form > .contact-button {
+    background-color: #000;
+    border: none;
+    color: #FFF;
+    font-size: 15px;
+    margin: 10px 0;
+    padding: 15px 25px;
+}
+.contact-form > .contact-button:hover {
+    background-color: #CCC;
+    color: #000;
+}
