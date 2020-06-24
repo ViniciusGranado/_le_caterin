@@ -12,7 +12,6 @@ body {
 
 /* HEADER */
 header {
-    background-color: red;
     height: 196px;
     padding: 32px 16px;
     text-align: center;
@@ -29,4 +28,88 @@ header span {
     background-color: #000;
     color: #FFF;
     padding: 2px 8px;
+}
+
+/* MAIN */
+
+main {
+    padding: 0 15px;
+    width: 66.6666%;
+}
+
+/* BLOG ARTICLES */
+.blog-article {
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2),
+                0 4px 20px 0 rgba(0,0,0,0.2);
+    margin-bottom: 40px;
+    width: 100%;
+    background-color: #FFF;
+}
+.blog-article img {
+    display: block;
+    height: auto;
+    width: 100%;
+}
+.blog-article .article-content {
+    padding: 0 16px 16px 16px;
+}
+.article-content .article-heading {
+    margin: 10px 0;
+}
+.article-content .article-subtitle {
+    font-size: 18px;
+    font-weight: inherit;
+    margin: 13px 0;
+}
+.article-subtitle span {
+    opacity: 0.6;
+}
+.article-content .article-paragraph {
+    font-size: 15px;
+    margin: 25px 12px 0 0;
+}
+.article-content .read-more-button, .article-content .article-comments {
+    display: inline-block;
+}
+.article-content .read-more-button {
+    background-color: inherit;
+    border: 1px solid #CCC;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 12px 25px;
+    margin-top: 30px;
+}
+.read-more-button:hover {
+    background-color: #CCC;
+}
+.read-more-button::after {
+    content: url('../images/arrow-icon.png');
+    margin-left: 5px;
+}
+.article-content .article-comments {
+    float: right;
+    font-weight: bold;
+    margin-right: 20px;
+    margin-top: 40px;
+}
+.article-comments::after {
+    background-color: #000;
+    border-radius: 50%;
+    color: #FFF;
+    content: '';
+    display: inline-block;
+    font-weight: 400;
+    height: 25px;
+    margin-bottom: 3px;
+    margin-left: 8px;
+    text-align: center;
+    vertical-align: middle;
+    width: 25px;
+}
+.after-1::after {
+    content: '0'
+}
+.after-2::after {
+    content: '2'
 }
