@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+/* FONT REFERECE
+   font-family: 'Raleway', sans-serif; */
+
+* {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.5;
+}
+body {
+    background-color: #F1F1F1;
+}
+
+/* HEADER */
+header {
+    background-color: red;
+    height: 196px;
+    padding: 32px 16px;
+    text-align: center;
+}
+header .blog-title {
+    font-size: 36px;
+    margin: 10px 0;
+}
+header .blog-subtitle {
+    font-size: 15px;
+    margin: 15px 0;
+}
+header span {
+    background-color: #000;
+    color: #FFF;
+    padding: 2px 8px;
+}
