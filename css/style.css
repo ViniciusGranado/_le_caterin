@@ -11,20 +11,20 @@ body {
 }
 
 /* HEADER */
-header {
+.main-header {
     height: 196px;
     padding: 32px 16px;
     text-align: center;
 }
-header .blog-title {
+.main-header .blog-title {
     font-size: 36px;
     margin: 10px 0;
 }
-header .blog-subtitle {
+.main-header .blog-subtitle {
     font-size: 15px;
     margin: 15px 0;
 }
-header span {
+.main-header span {
     background-color: #000;
     color: #FFF;
     padding: 2px 8px;
@@ -33,6 +33,7 @@ header span {
 /* MAIN */
 
 main {
+    display: inline-block;
     padding: 0 15px;
     width: 66.6666%;
 }
@@ -112,4 +113,99 @@ main {
 }
 .after-2::after {
     content: '2'
+}
+
+/* ASIDE */
+aside {
+    display: inline-block;
+    padding: 0 15px;
+    position: relative;
+    top: -79px;
+    width: 33.3333%;
+}
+aside > .aside-element {
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2);
+    margin-bottom: 40px;
+}
+/* ABOUT ASIDE */
+.about-aside > img {
+    display: block;
+    height: auto;
+    width: 100%;
+}
+.about-content {
+    padding: 0 16px 16px;
+}
+.about-content > h3{
+    font-size: 20px;
+    margin: 10px 0;
+}
+.about-content > p {
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+/* POPULAR POSTS ASIDE */
+.popular-posts-aside > .popular-posts-header {
+    background-color: #F1F1F1;
+    height: 66px;
+    padding: 0 16px;
+}
+.popular-posts-header > h3 {
+    font-size: 20px;
+    font-weight: inherit;
+    line-height: 66px;
+}
+
+.popular-posts-aside li {
+    background-color: #FFF;
+    border-bottom: 1px solid #DDD;
+    padding: 15px 15px 8px 15px;
+    position: relative;
+}
+.popular-posts-list img {
+    display: inline-block;
+    height: auto;
+    max-width: 50px;
+}
+.popular-posts-list .list-content {
+    display: inline-block;
+    margin-left: 11px;
+    position: relative;
+    top: -8px;
+}
+.popular-posts-list h4 {
+    font-size: 18px;
+    font-weight: inherit;
+}
+.popular-posts-list p {
+    font-size: 15px;
+}
+
+/* TAGS ASIDE */
+.tags-aside > .tags-header {
+    background-color: #F1F1F1;
+    height: 66px;
+    padding: 0 16px;
+}
+.tags-header > h3 {
+    font-size: 20px;
+    font-weight: inherit;
+    line-height: 66px;
+}
+.tags-aside .tags-list{
+    background-color: #FFF;
+    font-size: 12px;
+    padding: 16px;
+}
+.tags-list > li {
+    background-color: #F1F1F1;
+    display: inline-block;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+.tags-list > .selected {
+    background-color: #000;
+    color: #FFF;
+    font-size: 15px;
 }
