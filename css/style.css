@@ -271,3 +271,21 @@ footer > p {
 footer > p > a {
     text-decoration: underline;
 }
+
+/* MEDIA QUERIES */
+/* GRID LAYOUT */
+@media (max-width: 1000px) {
+    .grid-container {
+        display: grid;
+        grid-template: 196px auto auto 178px / 100%;
+        grid-template-areas: 'header'
+                             'main'
+                             'aside'
+                             'footer';
+    }
+
+    /* POPULAR POSTS ASIDE */
+    .popular-posts-aside li:nth-child(n+4){
+        display: none;
+    }
+}
