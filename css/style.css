@@ -1,0 +1,38 @@
+/* Fonts used: Arial, Verdana, Segoe UI */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+}
+
+/* HEADER */
+.fixedHeader {
+  background-color: #FFF;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.322);
+  font-family: Verdana, sans-serif;
+  height: 54px;
+  padding: 8px 16px;
+  position: fixed;
+  width: 100%;
+}
+.fixedHeader a{
+  color: #000;
+  display: inline-block;
+  font-size: 15px;
+  height: 100%;
+  letter-spacing: 4px;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+.fixedHeader a:hover {
+  background-color: #CCC;
+}
+.fixedHeader span {
+  font-weight: bold;
+}
+.fixedHeader .sideLinks {
+  float: right;
+  height: 100%;
+}
