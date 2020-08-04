@@ -15,6 +15,7 @@ body {
   height: 54px;
   padding: 8px 16px;
   position: fixed;
+  z-index: 1;
   width: 100%;
 }
 .fixedHeader a{
@@ -35,4 +36,34 @@ body {
 .fixedHeader .sideLinks {
   float: right;
   height: 100%;
+}
+
+/* Logo image */
+.logoImage {
+  position: relative;
+}
+
+.logoImage img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.logoImage .logo {
+  color: #FFF;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 36px;
+  position: absolute;
+  top: 48.5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.logoImage h1 {
+  letter-spacing: 4px;
+}
+.logoImage > .logo > span {
+  background-color: #000;
+  padding: 8px 16px;
+  font-weight: bold;
+  opacity: 0.75;
 }
