@@ -33,7 +33,7 @@ body {
 .fixedHeader span {
   font-weight: bold;
 }
-.fixedHeader .sideLinks {
+.fixedHeader > .sideLinks {
   float: right;
   height: 100%;
 }
@@ -46,6 +46,8 @@ body {
 .logoImage img {
   display: block;
   height: auto;
+  margin: 0 auto;
+  max-width: 1500px;
   width: 100%;
 }
 
@@ -61,9 +63,20 @@ body {
 .logoImage h1 {
   letter-spacing: 4px;
 }
-.logoImage > .logo > span {
+.logoImage > .logo > .logo-span {
   background-color: #000;
   padding: 8px 16px;
   font-weight: bold;
   opacity: 0.75;
+}
+
+/* Media queries */
+@media (max-width: 600px) {
+  .fixedHeader > .sideLinks {
+    display: none;
+  }
+
+  .logoImage .logo .title-span{
+    display: none;
+  }
 }
