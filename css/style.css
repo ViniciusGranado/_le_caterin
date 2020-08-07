@@ -112,7 +112,6 @@ main {
   font-family: Verdana, sans-serif;
 }
 
-.projects 
 /* Media queries */
 @media (max-width: 600px) {
   .fixedHeader > .sideLinks {
@@ -121,5 +120,15 @@ main {
 
   .logoImage .logo .title-span{
     display: none;
+  }
+
+  .projects .projects-pictures figure {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .projects .projects-pictures figure {
+    width: 50%;
   }
 }
