@@ -75,12 +75,12 @@ main {
   padding: 8px 16px;
 }
 
-/* Projects area */
-.projects .projects-title{
+/* Generic areas */
+.area-title{
   padding: 32px 16px;
 }
 
-.projects h2 {
+.h2-title{
   border-bottom: 1px solid rgba(192, 192, 192, 0.199);
   font-family: 'Segoe UI', sans-serif;
   font-size: 24px;
@@ -88,10 +88,12 @@ main {
   margin: 10px 0;
 }
 
-.projects .projects-pictures {
+.area-content {
   padding: 0 8px;
 }
-.projects .projects-pictures figure{
+
+/* Projects area */
+.projects .area-content figure{
   display: inline-block;
   width: 25%;
   margin: 0 0 9px;
@@ -110,6 +112,46 @@ main {
   padding: 8px 16px;
   font-size: 15px;
   font-family: Verdana, sans-serif;
+}
+
+/* About area */
+.about .area-content {
+  padding: 0 8px;
+}
+.about p {
+  font-family: Verdana, sans-serif;
+  font-size: 15px;
+  margin: 15px 0;
+}
+.about-pictures .staff-info {
+  display: inline-block;
+  width: 25%;
+  padding: 0 8px;
+}
+.staff-info img {
+  width: 100%;
+  height: auto;
+  filter: grayscale(70%);
+  display: block;
+}
+.staff-info h3 {
+  font-size: 24px;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 10px 0;
+}
+.staff-info h4 {
+  font-size: 15px;
+  font-family: Verdana, sans-serif;
+  opacity: 0.65;
+  margin: 15px 0;
+}
+.staff-info button {
+  width: 100%;
+  border: none;
+  padding: 8px 16px;
+  font-size: 15px;
+  font-family: Verdana, sans-serif;
+  height: 38px;
 }
 
 /* Media queries */
