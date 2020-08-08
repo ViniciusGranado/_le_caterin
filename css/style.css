@@ -127,11 +127,12 @@ main {
   display: inline-block;
   width: 25%;
   padding: 0 8px;
+  margin: 0 0 16px;
 }
 .staff-info img {
   width: 100%;
   height: auto;
-  filter: grayscale(70%);
+  filter: grayscale(75%);
   display: block;
 }
 .staff-info h3 {
@@ -152,9 +153,20 @@ main {
   font-size: 15px;
   font-family: Verdana, sans-serif;
   height: 38px;
+  margin: 0 0 15px;
 }
 
 /* Media queries */
+@media (max-width: 1000px) {
+  .projects .area-content figure {
+    width: 50%;
+  }
+
+  .about .staff-info {
+    width: 50%;
+  }
+}
+
 @media (max-width: 600px) {
   .fixedHeader > .sideLinks {
     display: none;
@@ -164,13 +176,11 @@ main {
     display: none;
   }
 
-  .projects .projects-pictures figure {
+  .projects .area-content figure {
     width: 100%;
   }
-}
 
-@media (max-width: 1000px) {
-  .projects .projects-pictures figure {
-    width: 50%;
+  .about .staff-info {
+    width: 100%;
   }
 }
