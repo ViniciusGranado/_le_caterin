@@ -148,6 +148,7 @@ main .gallery {
 .gallery-grid img {
   width: 100%;
   height: auto;
+  cursor: pointer;
 }
 .gallery-grid .gallery-1 {
   grid-area: gallery1;
@@ -164,15 +165,25 @@ main .gallery {
 
 /* Spotlight section */
 main .spotlight {
-  grid-area: "spotlight";
   display: grid;
   grid-template: repeat(3, auto) / 1fr 1fr;
   grid-template-areas: "image1 header1"
                        "header2 image2"
                        "image3 header3";
 }
+.spotlight img {
+  width: 100%;
+  height: auto;
+}
 .spotlight .spotlight-header {
-  padding: 170px 104px
+  padding: 104px;
+  position: relative;
+}
+.spotlight .inner {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding-right: inherit;
 }
 .spotlight .spotlight-header h3 {
   font-size: 23.4px;
@@ -187,7 +198,7 @@ main .spotlight {
 }
 .spotlight .header-1 {
   grid-area: header1;
-  background-color: #FFF;
+  background-color: #F8F7F6;
 }
 .spotlight .header-2 {
   grid-area: header2;
@@ -207,4 +218,38 @@ main .spotlight {
 .spotlight .header-3 {
   grid-area: header3;
   background-color: #FFF;
+}
+
+/* Footer */
+footer {
+  color: #FFF;
+  height: 224px;
+  text-align: center;
+  padding: 40px 0;
+}
+footer ul {
+  position: relative;
+  width: max-content;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 40px 0;
+}
+footer ul li {
+  display: inline-block;
+  padding: 0 5px;
+}
+footer img {
+  filter: opacity(70%);
+  transform: scale(0.8);
+  transition: all 0.3s ease-out;
+}
+footer img:hover {
+  filter: unset;
+}
+footer p {
+  color: #a8a8a8;
+  font-size: 15.6px;
+}
+footer p a {
+  text-decoration: underline;
 }
