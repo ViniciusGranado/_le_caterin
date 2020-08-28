@@ -46,64 +46,76 @@ header span {
 
 /* Main */
 main {
-  background-color: lightcoral;
+  /* background-color: lightcoral; */
   margin: 0 auto;
   max-width: 1390px;
+  display: grid;
+  grid-template-areas: "header-image"
+                       "presentation"
+                       "gallery"
+                       "spotlight";
+  grid-template: auto auto auto auto / 1fr;
+}
+/* Header image section*/
+main .header-image {
+  grid-area: "header-image";
+}
+.header-image img{
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
-/* Media queries */
-@media (max-width: 1680px) {
-  header {
-    height: 224px;
-  }
-  header h1 {
-    font-size: 59px;
-  }
-  header span {
-    font-size: 15px;
-  }
-  /* Main */
-  main {
-    max-width: 1170px;
-  }
+/* Presentation section*/
+main .presentation {
+  grid-area: "presentation";
+  text-align: center;
+}
+.presentation .presentation-header {
+  height: 240px;
+  background-color: #FFF;
+  padding: 69px 35px;
+}
+.presentation-header h2 {
+  font-size: 30px;
+  position: relative;
+  margin-bottom: 30px;
+}
+.presentation-header h2::after {
+  display: block;
+  content: '';
+  width: 111px;
+  height: 1px;
+  background-color: #d8d8d8;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 10px;
+}
+.presentation-header p {
+  color: #B6B6B6;
+  font-size: 14px;
+  letter-spacing: 4px;
 }
 
-@media (max-width: 1310px) {
-  main {
-    max-width: 90%;
-  }
+.presentation-text {
+  background-color: #F5F5F4;
+  padding: 104px;
+  text-align: left;
+  color: #B6B6B6;
+}
+.presentation-text p {
+  font-size: 17.3333px
+}
+.presentation-text p:first-of-type {
+  margin-bottom: 35px;
+}
+/* Gallery section*/
+main .gallery {
+  grid-area: "gallery";
 }
 
-@media (max-width: 980px) {
-  body {
-    background-position: top;
-    background-size: contain;
-  }
-  header {
-    height: 215px;
-  }
-  header .logo {
-    top: 34%;
-  }
-  header h1 {
-    font-size: 64px;
-  }
-  header span {
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 736px) {
-  header {
-    height: 175px;
-  }
-  header .logo {
-    top: 45%;
-  }
-  header h1 {
-    font-size: 48px;
-  }
-  header span {
-    font-size: 16px;
-  }
+/* Spotlight section */
+main .spotlight {
+  grid-area: "spotlight";
 }
