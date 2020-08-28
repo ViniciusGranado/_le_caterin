@@ -57,6 +57,9 @@ main {
                        "gallery"
                        "spotlight";
   grid-template: repeat(4, auto) / 1fr;
+  border-left: 1px solid #535355;
+  border-right: 1px solid #535355;
+
 }
 
 /* Header image section*/
@@ -111,6 +114,7 @@ main .presentation {
 .presentation-text p:first-of-type {
   margin-bottom: 35px;
 }
+
 /* Gallery section*/
 main .gallery {
   background-color: #1E1F23;
