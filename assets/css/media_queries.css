@@ -1,81 +1,123 @@
 /* Media queries */
 @media (max-width: 1680px) {
-    header {
-      height: 224px;
-    }
-    header h1 {
-      font-size: 59px;
-    }
-    header span {
-      font-size: 15px;
-    }
-    /* Main */
-    main {
-      max-width: 1170px;
-    }
-    .presentation-header h2 {
-      font-size: 26px;
-    } 
+  header {
+    height: 224px;
   }
+  header h1 {
+		font-size: 59px;
+	}
+	header span {
+		font-size: 15px;
+	}
+
+	/* Main */
+	main {
+		max-width: 1170px;
+	}
+	/* Presentation section*/
+	.presentation .presentation-header {
+			height: 200px;
+			padding: 59px 30px;
+	}
+	.presentation-header h2 {
+		font-size: 26px;
+	}
+	.presentation-header p {
+			font-size: 11px;
+	}
+
+	.presentation-text {
+		padding: 88px;
+	}
+	.presentation-text p {
+		font-size: 14.6666px;
+	}
+	.presentation-text p:first-of-type {
+		margin-bottom: 30px;
+	}
+}
   
-  @media (max-width: 1310px) {
-    main {
-      max-width: 90%;
-    }
-  }
+@media (max-width: 1310px) {
+	main {
+		max-width: 90%;
+	}
+}
+
+@media (max-width: 1280px) {
+	header {
+		height: 192px;
+	}
+	header .logo {
+		top: 34%;
+	}
+}
   
-  @media (max-width: 1280px) {
-    header {
-      height: 192px;
-    }
-    header .logo {
-      top: 34%;
-    }
-    /* header h1 {
-      font-size: 59px;
-    }
-    header span {
-      font-size: 15px;
-    } */
-  }
+@media (max-width: 980px) {
+	body {
+		background-position: top;
+		background-size: contain;
+	}
+	header {
+		height: 215px;
+	}
+	header h1 {
+		font-size: 64px;
+	}
+	header span {
+		font-size: 16px;
+	}
+
+	/*Main*/
+
+	/* Presentation section*/
+	.presentation .presentation-header {
+			padding: 48px 32px;
+	}
+	.presentation-header h2 {
+			font-size: 28px;
+	}
+	.presentation-header p {
+			font-size: 12.8px;
+	}
+	.presentation-text {
+		padding: 64px;
+	}
+	.presentation-text p:first-of-type {
+		margin-bottom: 32px;
+	}
+}
   
-  @media (max-width: 980px) {
-    body {
-      background-position: top;
-      background-size: contain;
-    }
-    header {
-      height: 215px;
-    }
-    header h1 {
-      font-size: 64px;
-    }
-    header span {
-      font-size: 16px;
-    }
-  
-    /*Main*/
-    .presentation-header h2 {
-      font-size: 28px;
-    } 
-  }
-  
-  @media (max-width: 736px) {
-    header {
-      height: 175px;
-    }
-    header .logo {
-      top: 45%;
-    }
-    header h1 {
-      font-size: 48px;
-    }
-    header span {
-      font-size: 16px;
-    }
-  
-    /* Main */
-    .presentation-header h2 {
-      font-size: 24px;
-    } 
-  }
+@media (max-width: 736px) {
+	header {
+		height: 175px;
+	}
+	header .logo {
+		top: 45%;
+	}
+	header h1 {
+		font-size: 48px;
+	}
+	header span {
+		font-size: 16px;
+	}
+
+	/*Main*/
+
+	/* Presentation section*/
+	.presentation .presentation-header {
+		padding: 48px 32px;
+		height: 180px;
+	}
+	.presentation-header h2 {
+		font-size: 24px;
+	}
+	.presentation-header p {
+		font-size: 12.8px;
+	}
+	.presentation-text {
+		padding: 32px;
+	}
+	.presentation-text p {
+		font-size: 16px;
+	}
+}

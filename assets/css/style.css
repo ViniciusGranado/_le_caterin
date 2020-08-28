@@ -15,12 +15,15 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
 }
 a {
   color: inherit;
   text-decoration: none;
 }
-
+img {
+  display: block;
+}
 /* Header */
 header {
   height: 269px;
@@ -46,7 +49,6 @@ header span {
 
 /* Main */
 main {
-  /* background-color: lightcoral; */
   margin: 0 auto;
   max-width: 1390px;
   display: grid;
@@ -54,8 +56,9 @@ main {
                        "presentation"
                        "gallery"
                        "spotlight";
-  grid-template: auto auto auto auto / 1fr;
+  grid-template: repeat(4, auto) / 1fr;
 }
+
 /* Header image section*/
 main .header-image {
   grid-area: "header-image";
@@ -63,18 +66,17 @@ main .header-image {
 .header-image img{
   width: 100%;
   height: auto;
-  display: block;
 }
 
 /* Presentation section*/
 main .presentation {
   grid-area: "presentation";
-  text-align: center;
 }
 .presentation .presentation-header {
   height: 240px;
   background-color: #FFF;
   padding: 69px 35px;
+  text-align: center;
 }
 .presentation-header h2 {
   font-size: 30px;
@@ -101,7 +103,6 @@ main .presentation {
 .presentation-text {
   background-color: #F5F5F4;
   padding: 104px;
-  text-align: left;
   color: #B6B6B6;
 }
 .presentation-text p {
@@ -112,8 +113,51 @@ main .presentation {
 }
 /* Gallery section*/
 main .gallery {
-  grid-area: "gallery";
+  background-color: #1E1F23;
+  padding: 104px;
 }
+.gallery .gallery-grid {
+  display: grid;
+  width: 100%;
+  height: auto;
+  grid-template: repeat(3, auto) / 1fr 1fr;
+  grid-template-areas: "gallery-header gallery-header"
+                       "gallery1 gallery2"
+                       "gallery3 gallery4";
+}
+.gallery-grid .gallery-header {
+  grid-area: gallery-header;
+  background-color: #121315;
+  padding: 35px;
+  text-align: center;
+}
+.gallery-header h2 {
+  font-size: 31px;
+  color: white;
+  margin-bottom: 30px;
+}
+.gallery-header p {
+  font-size: 14px;
+  color: #6b6b6b;
+  letter-spacing: 4px;
+}
+.gallery-grid img {
+  width: 100%;
+  height: auto;
+}
+.gallery-grid .gallery-1 {
+  grid-area: gallery1;
+}
+.gallery-grid .gallery-2 {
+  grid-area: gallery2;
+}
+.gallery-grid .gallery-3 {
+  grid-area: gallery3;
+}
+.gallery-grid .gallery-4 {
+  grid-area: gallery4;
+}
+
 
 /* Spotlight section */
 main .spotlight {
