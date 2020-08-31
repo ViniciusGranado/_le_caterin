@@ -49,16 +49,16 @@ header span {
 
 /* Main */
 main {
-  margin: 0 auto;
-  max-width: 1390px;
+  border-bottom-right-radius: 5px;
+  box-shadow: 0 0 12px black;
   display: grid;
+  grid-template: repeat(4, auto) / 1fr;
   grid-template-areas: "header-image"
                        "presentation"
                        "gallery"
                        "spotlight";
-  grid-template: repeat(4, auto) / 1fr;
-  box-shadow: 0 0 12px black;
-  border-bottom-right-radius: 5px;
+  margin: 0 auto;
+  max-width: 1390px;
 }
 
 /* Header image section*/
@@ -66,8 +66,8 @@ main .header-image {
   grid-area: "header-image";
 }
 .header-image img{
-  width: 100%;
   height: auto;
+  width: 100%;
 }
 
 /* Presentation section*/
@@ -75,26 +75,26 @@ main .presentation {
   grid-area: "presentation";
 }
 .presentation .presentation-header {
-  height: 240px;
   background-color: #FFF;
+  height: 240px;
   padding: 69px 35px;
   text-align: center;
 }
 .presentation-header h2 {
   font-size: 30px;
-  position: relative;
   margin-bottom: 30px;
+  position: relative;
 }
 .presentation-header h2::after {
-  display: block;
-  content: '';
-  width: 111px;
-  height: 1px;
   background-color: #d8d8d8;
-  position: absolute;
+  content: '';
+  display: block;
+  height: 1px;
   left: 50%;
-  transform: translateX(-50%);
   margin-top: 10px;
+  position: absolute;
+  transform: translateX(-50%);
+  width: 111px;
 }
 .presentation-header p {
   color: #B6B6B6;
@@ -104,8 +104,8 @@ main .presentation {
 
 .presentation-text {
   background-color: #F5F5F4;
-  padding: 104px;
   color: #B6B6B6;
+  padding: 104px;
 }
 .presentation-text p {
   font-size: 17.3333px
@@ -121,33 +121,33 @@ main .gallery {
 }
 .gallery .gallery-grid {
   display: grid;
-  width: 100%;
-  height: auto;
   grid-template: repeat(3, auto) / 1fr 1fr;
   grid-template-areas: "gallery-header gallery-header"
                        "gallery1 gallery2"
                        "gallery3 gallery4";
+  height: auto;
+  width: 100%;
 }
 .gallery-grid .gallery-header {
-  grid-area: gallery-header;
   background-color: #121315;
+  grid-area: gallery-header;
   padding: 35px;
   text-align: center;
 }
 .gallery-header h2 {
-  font-size: 31px;
   color: white;
+  font-size: 31px;
   margin-bottom: 30px;
 }
 .gallery-header p {
-  font-size: 14px;
   color: #6b6b6b;
+  font-size: 14px;
   letter-spacing: 4px;
 }
 .gallery-grid img {
-  width: 100%;
-  height: auto;
   cursor: pointer;
+  height: auto;
+  width: 100%;
 }
 .gallery-grid .gallery-1 {
   grid-area: gallery1;
@@ -171,38 +171,38 @@ main .spotlight {
                        "image3 header3";
 }
 .spotlight img {
-  width: 100%;
   height: auto;
+  width: 100%;
 }
 .spotlight .spotlight-header {
   padding: 104px;
   position: relative;
 }
 .spotlight .inner {
+  padding-right: inherit;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  padding-right: inherit;
 }
 .spotlight .spotlight-header h3 {
   font-size: 23.4px;
   margin-bottom: 17.3333px;
 }
 .spotlight .spotlight-header p {
-  font-size: 17.3333px;
   color: #A7A7A7;
+  font-size: 17.3333px;
 }
 .spotlight .image-1 {
   grid-area: image1;
 }
 .spotlight .header-1 {
-  grid-area: header1;
   background-color: #F8F7F6;
+  grid-area: header1;
 }
 .spotlight .header-2 {
-  grid-area: header2;
   background-color: #1E1F23;
   color: #FFF;
+  grid-area: header2;
   text-align: right;
 }
 .spotlight .header-2 p {
@@ -215,24 +215,24 @@ main .spotlight {
   grid-area: image3;
 }
 .spotlight .header-3 {
-  grid-area: header3;
   background-color: #F8F7F6;
   border-bottom-right-radius: 5px;
+  grid-area: header3;
 }
 
 /* Footer */
 footer {
   color: #FFF;
   height: 224px;
-  text-align: center;
   padding: 40px 0;
+  text-align: center;
 }
 footer ul {
-  position: relative;
-  width: max-content;
   left: 50%;
-  transform: translateX(-50%);
   padding: 40px 0;
+  position: relative;
+  transform: translateX(-50%);
+  width: max-content;
 }
 footer ul li {
   display: inline-block;
@@ -240,8 +240,8 @@ footer ul li {
 }
 footer img {
   filter: opacity(70%);
-  transform: scale(0.8);
   transition: all 0.3s ease-out;
+  transform: scale(0.8);
 }
 footer img:hover {
   filter: unset;
