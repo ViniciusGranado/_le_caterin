@@ -57,9 +57,8 @@ main {
                        "gallery"
                        "spotlight";
   grid-template: repeat(4, auto) / 1fr;
-  border-left: 1px solid #535355;
-  border-right: 1px solid #535355;
-
+  box-shadow: 0 0 12px black;
+  border-bottom-right-radius: 5px;
 }
 
 /* Header image section*/
@@ -217,7 +216,8 @@ main .spotlight {
 }
 .spotlight .header-3 {
   grid-area: header3;
-  background-color: #FFF;
+  background-color: #F8F7F6;
+  border-bottom-right-radius: 5px;
 }
 
 /* Footer */
