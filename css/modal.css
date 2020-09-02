@@ -22,9 +22,25 @@
   transform: translate(-50%, -50%) scale(0);
   width: fit-content;
 }
-.inner-modal img {
+.inner-modal .modal-image {
   height: auto;
   width: 100%;
+}
+.inner-modal .modal-arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  transition: all 0.1s ease-in;
+  transform: scale(0.8);
+}
+.inner-modal .modal-arrow:hover {
+  transform: scale(0.9);
+}
+.inner-modal .left-arrow {
+  left: -8%;
+}
+.inner-modal .right-arrow {
+  right: -8%;
 }
 .inner-modal p {
   line-height: 2;
