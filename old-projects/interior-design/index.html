@@ -6,9 +6,10 @@
         <title>Interior Design</title>
         <link rel='stylesheet' href='css/reset.css'>
         <link rel='stylesheet' href="css/style.css">
+        <link rel='stylesheet' href='css/modal.css'>
     </head>
 
-    <body>
+    <body class=''>
         <!-- SIDE BAR -->
         <header class="side-bar">
             <h1 class='company-name'>
@@ -34,12 +35,22 @@
                 <h2 class='section-title'>Showcase.</h2>
 
                 <div class="photos">
-                    <img src="images/kitchenconcrete.jpg" alt=""><!--
-                 --><img src="images/atrium.jpg" alt=""><!--
-                 --><img src="images/livingroom.jpg" alt=""><!--
-                 --><img src="images/bedroom.jpg" alt=""><!--
-                 --><img src="images/diningroom.jpg" alt=""><!--
-                 --><img src="images/livingroom2.jpg" alt="">
+                    <img class='image-preview' src="images/kitchenconcrete.jpg" alt="Concrete meets bricks"><!--
+                 --><img class='image-preview' src="images/atrium.jpg" alt="Windows for the atrium"><!--
+                 --><img class='image-preview' src="images/livingroom.jpg" alt="Light, white and tight scandinavian design"><!--
+                 --><img class='image-preview' src="images/bedroom.jpg" alt="Bedroom and office in one space"><!--
+                 --><img class='image-preview' src="images/diningroom.jpg" alt="White walls with designer chairs"><!--
+                 --><img class='image-preview' src="images/livingroom2.jpg" alt="Scandinavian design">
+                </div>
+            </div>
+
+            <!-- MODAL -->
+            <div class="modal">
+                <div class="inner-modal">
+                    <img class='modal-arrow left-arrow' src='images/arror-left.png' alt='Left arrow icon'>
+                    <img class='modal-arrow right-arrow' src='images/arrow-right.png' alt='Right arrow icon'>
+                    <img class='modal-image' src='' alt=''>
+                    <p class='modal-caption'></p>
                 </div>
             </div>
 
@@ -214,5 +225,7 @@
         <footer class='footer'>
             <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp">w3.css</a></p>
         </footer>
+
+        <script src='javascript/script.js'></script>
     </body>
 </html>
